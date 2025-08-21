@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lost Ark Desktop
 
-## Getting Started
+🎮 Современное десктопное приложение для управления игрой Lost Ark, построенное на Electron и Next.js.
 
-First, run the development server:
+## ✨ Возможности
 
+- 🏠 **Главная панель** - обзор статистики и быстрые действия
+- ⚔️ **Управление рейдами** - планирование и отслеживание рейдов
+- 👥 **Персонажи** - управление персонажами и их прогрессом
+- 📅 **Расписание** - календарь событий и ежедневные задачи
+- 💬 **Чаты** - общение с гильдией и друзьями
+- 🧮 **Калькуляторы** - расчет заточки, золота и улучшений
+- 🤖 **ИИ Помощник** - умные рекомендации и анализ
+- ⚙️ **Настройки** - персонализация приложения
+
+## 🛠️ Технологии
+
+- **Frontend**: Next.js 15.5.0 + TypeScript
+- **Desktop**: Electron 37.3.1
+- **UI**: Tailwind CSS + Framer Motion
+- **Icons**: Lucide React
+- **Components**: Radix UI
+
+## 🚀 Установка и запуск
+
+### Требования
+- Node.js 18+ 
+- npm или yarn
+
+### Установка зависимостей
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Запуск в режиме разработки
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Сборка приложения
+```bash
+npm run export
+npm run electron-pack
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Структура проекта
 
-## Learn More
+```
+lost-ark-desktop/
+├── src/
+│   ├── app/                 # Next.js App Router
+│   │   ├── page.tsx         # Главная страница
+│   │   ├── raids/           # Страница рейдов
+│   │   ├── characters/      # Страница персонажей
+│   │   ├── schedule/        # Страница расписания
+│   │   ├── chat/            # Страница чатов
+│   │   ├── calculator/      # Страница калькуляторов
+│   │   ├── ai/              # Страница ИИ помощника
+│   │   └── settings/        # Страница настроек
+│   └── components/
+│       └── Sidebar.tsx      # Боковая навигация
+├── main/
+│   ├── main.js              # Главный процесс Electron
+│   └── preload.js           # Preload скрипт
+├── assets/                  # Ресурсы приложения
+└── out/                     # Собранные файлы Next.js
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🎨 Дизайн
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Приложение использует темную тему в стиле Lost Ark с:
+- Градиентными фонами
+- Анимациями и эффектами свечения
+- Адаптивным интерфейсом
+- Современными компонентами UI
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔗 Интеграция с сайтом
 
-## Deploy on Vercel
+Приложение готово к интеграции с вашим существующим сайтом:
+- Настройка URL сайта в разделе настроек
+- Синхронизация данных о персонажах и рейдах
+- Экспорт/импорт данных
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📦 Сборка для разных платформ
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Windows**: NSIS installer
+- **macOS**: DMG package (x64 + ARM64)
+- **Linux**: AppImage
+
+## 🤝 Разработка
+
+Проект использует современные инструменты разработки:
+- TypeScript для типобезопасности
+- ESLint для качества кода
+- Tailwind CSS для стилизации
+- Framer Motion для анимаций
+
+## 📄 Лицензия
+
+MIT License
+
+## 🎯 Планы развития
+
+- [ ] Интеграция с API Lost Ark
+- [ ] Реальные ИИ функции
+- [ ] База данных для хранения данных
+- [ ] Уведомления и планировщик
+- [ ] Мультиязычность
+- [ ] Темы оформления
+
+---
+
+Made with ❤️ for Lost Ark community
