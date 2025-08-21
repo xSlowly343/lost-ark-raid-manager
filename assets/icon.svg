@@ -1,0 +1,32 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366F1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" rx="80" fill="#1F2937"/>
+  
+  <!-- Sword -->
+  <path d="M256 80 L256 432 M200 120 L312 120 M200 160 L312 160 M200 200 L312 200" 
+        stroke="url(#goldGradient)" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Crown -->
+  <path d="M180 200 L220 160 L256 180 L292 160 L332 200 L320 240 L192 240 Z" 
+        fill="url(#purpleGradient)"/>
+  
+  <!-- Gems -->
+  <circle cx="220" cy="180" r="8" fill="#FFD700"/>
+  <circle cx="256" cy="200" r="8" fill="#FFD700"/>
+  <circle cx="292" cy="180" r="8" fill="#FFD700"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="256" cy="320" r="40" fill="none" stroke="url(#goldGradient)" stroke-width="4"/>
+  <circle cx="256" cy="320" r="24" fill="none" stroke="url(#purpleGradient)" stroke-width="2"/>
+</svg>
