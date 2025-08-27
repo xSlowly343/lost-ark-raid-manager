@@ -22,7 +22,7 @@ export default function CalculatorPage() {
 
   const calculateCost = () => {
     let totalCost = 0;
-    let totalMaterials = { stone: 0, fusion: 0 };
+    const totalMaterials = { stone: 0, fusion: 0 };
     
     for (let i = currentLevel; i < targetLevel; i++) {
       const data = enhancementData.find(e => e.level === i + 1);
