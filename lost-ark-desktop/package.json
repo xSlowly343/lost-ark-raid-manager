@@ -9,9 +9,10 @@
   "scripts": {
     "dev": "concurrently -n \"NEXT,ELECTRON\" -c \"yellow,blue\" --kill-others \"next dev --turbopack\" \"wait-on http://localhost:3000 && electron .\"",
     "build": "next build",
-    "export": "next build && next export",
+    "export": "next build",
     "electron": "electron .",
     "electron-dev": "cross-env NODE_ENV=development electron .",
+    "electron-prod": "cross-env NODE_ENV=production electron .",
     "electron-pack": "npm run export && electron-builder",
     "start": "next start",
     "lint": "eslint"
